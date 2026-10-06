@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShiftMind &mdash; WearAgent 2026 @ UbiComp/ISWC</title>
-<meta name="description" content="ShiftMind: Shared Workforce Memory and Agentic Analysis on Smart Glasses. WearAgent 2026 workshop at UbiComp/ISWC 2026, Shanghai.">
+<meta name="description" content="ShiftMind: Shared Workforce Memory and Agentic Analysis on Smart Glasses. WearAgent 2026 workshop at UbiComp/ISWC 2026, Shanghai. A research prototype from Tsinghua University; code and integration notes are public.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -31,6 +31,16 @@
   .authors .dag { font-size: 10px; vertical-align: super; }
   .affil { margin-top: 4px; font-size: 13.5px; opacity: 0.92; }
   main { max-width: 720px; margin: 0 auto; padding: 30px 20px 46px; text-align: center; }
+  .question {
+    background: #F5EFF7;
+    border: 1.5px solid #82318E;
+    border-radius: 12px;
+    padding: 18px 22px 16px;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+  .qlabel { font-size: 12px; font-weight: 700; letter-spacing: 2.5px; color: #82318E; margin-bottom: 8px; }
+  .question p { font-size: 16.5px; line-height: 1.45; color: #241d28; }
   main img.flyer {
     display: block;
     width: 100%;
@@ -62,14 +72,19 @@
     <div class="affil">Tsinghua University &nbsp;&middot;&nbsp; <span class="dag">&dagger;</span> equal contribution</div>
   </div>
   <main>
+    <div class="question">
+      <div class="qlabel">SHARED MEMORY QUESTION</div>
+      <p>When a returning customer is served by a different employee, possibly at a different site, how should the record of prior encounters reach that employee, without a query, and without asking the customer to repeat context?</p>
+    </div>
     <img class="flyer" src="flyer_square.jpg" alt="ShiftMind flyer">
     <div class="actions">
       <a class="btn btn-primary" href="flyer_print_a4.pdf" download>Download print PDF (A4)</a>
       <a class="btn btn-ghost" href="https://github.com/edutjie/ShiftMind">Code on GitHub</a>
     </div>
     <p class="foot">
-      A returning customer walks in, and their memory card is already on the worker's display.<br>
-      Recognition is the query. Proactive, shared across the workforce, cumulative per customer, agent-queryable.<br><br>
+      We argue that consumer smart glasses, already issued to frontline staff for task support, are a candidate platform for organizational memory.<br>
+      ShiftMind contributes the framing, an end-to-end open-source prototype with a strict I/O-compute split, and a shared-memory framework: identity-anchored, cumulative per customer, and queryable by a tool-using agent.<br>
+      Scope: research prototype, evaluated at small scale; a user study and in-store evaluation are future work.<br><br>
       <a href="mailto:daihz25@mails.tsinghua.edu.cn">daihz25@mails.tsinghua.edu.cn</a>
     </p>
   </main>
