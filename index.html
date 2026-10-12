@@ -60,6 +60,22 @@
   }
   .btn-primary { background: #82318E; color: #fff; }
   .btn-ghost { background: transparent; color: #660874; border: 1.6px solid #82318E; }
+  .videoqr {
+    margin: 28px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    width: fit-content;
+    background: #F5EFF7;
+    border: 1.5px solid #82318E;
+    border-radius: 12px;
+    padding: 16px 26px;
+    text-decoration: none;
+  }
+  .videoqr img { width: 130px; height: 130px; display: block; }
+  .videoqr .vt { text-align: left; }
+  .videoqr .vt .v1 { font-size: 20px; font-weight: 700; color: #660874; }
+  .videoqr .vt .v2 { font-size: 15px; color: #6b6572; margin-top: 6px; }
   .foot { margin-top: 30px; font-size: 13px; color: #6b6572; line-height: 1.6; }
   .foot a { color: #82318E; text-decoration: none; font-weight: 600; }
 </style>
@@ -83,6 +99,13 @@
       <a class="btn btn-ghost" href="flyer_landscape.png" download>Landscape (PNG)</a>
       <a class="btn btn-ghost" href="https://github.com/edutjie/ShiftMind">Code on GitHub</a>
     </div>
+    <a class="videoqr" href="https://youtu.be/zaEACnPiLCE">
+      <img src="video_qr.png" alt="QR code to the demo video">
+      <div class="vt">
+        <div class="v1">Watch the demo video</div>
+        <div class="v2">Scan, or tap here: youtu.be/zaEACnPiLCE</div>
+      </div>
+    </a>
     <p class="foot">
       We argue that consumer smart glasses, already issued to frontline staff for task support, are a candidate platform for organizational memory.<br>
       ShiftMind contributes the framing, an end-to-end open-source prototype with a strict I/O-compute split, and a shared-memory framework: identity-anchored, cumulative per customer, and queryable by a tool-using agent.<br>
